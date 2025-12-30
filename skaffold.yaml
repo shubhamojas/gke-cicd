@@ -1,5 +1,7 @@
 apiVersion: skaffold/v4beta9
 kind: Config
+metadata:
+  name: gke-cicd-pipeline # Make sure this matches your Delivery Pipeline name
 build:
   tagPolicy:
     gitCommit: {}
@@ -11,3 +13,8 @@ deploy:
   kubectl: {}
   logs:
     prefix: container
+
+# ADD THIS SECTION:
+profiles:
+  - name: dev
+  - name: prod
