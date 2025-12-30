@@ -6,5 +6,5 @@ metadata:
   labels: {}
 description: dev
 gke:
-  cluster: projects/prj-poc-001/locations/us-central1-c/clusters/cluster0
+  cluster: projects/my-devops-test-lab/locations/us-central1/clusters/cluster0
 
